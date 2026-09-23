@@ -1,0 +1,14 @@
+# Judging is CPU-only and needs nothing but an HTTP client. If you only want to
+# score model outputs you already have, this single line is enough.
+requests>=2.31
+
+# Running a model over the benchmark, and training KPA.
+torch>=2.4
+transformers>=4.57.0,<6    # Qwen3-VL support; pin major APIs used here
+accelerate>=0.34
+huggingface_hub>=0.34
+pillow>=10.0
+pyyaml>=6.0
+
+# Only needed by kpa.slerp_merge when the driving expert is a LoRA adapter.
+peft>=0.13

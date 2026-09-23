@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+.venv/
+venv/
+.env
+.cache/
+.pytest_cache/
+.ruff_cache/
+
+# Benchmark data is distributed through the Hub, not committed here.
+data/
+
+# Run artefacts
+results/
+adapters/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.jsonl
+*.log
+*.out
+
+# Judge resume logs
+progress.jsonl
+.*_progress.jsonl
+
+.DS_Store
+.ipynb_checkpoints/
