@@ -7,6 +7,7 @@ The driving context (road, ego pose, navigation command, motion history) is held
 fixed and only the object in the scene changes. The benchmark asks one question:
 does the model's decision update when it should, and hold when it should not?
 
+- **Paper**: [arXiv:2609.00242](https://arxiv.org/abs/2609.00242), EMNLP 2026 Findings
 - **Data**: [`tangzx2024/CoLT-Drive`](https://huggingface.co/datasets/tangzx2024/CoLT-Drive) on the Hugging Face Hub
 - **Task**: given a front-camera image and the driving context, output one
   longitudinal action and one lateral action
@@ -137,3 +138,15 @@ kpa/          moe_layers.py, regimes.py, slerp_merge.py, train.py,
 
 Apache License 2.0. See [LICENSE](LICENSE). The dataset is distributed
 separately on the Hugging Face Hub; see its dataset card for license terms.
+
+## Citation
+
+```bibtex
+@inproceedings{tang2026coltdrive,
+  title     = {CoLT-Drive: Counterfactual Long-Tail Benchmarking and Knowledge-Preserving Adaptation for Driving Affordance Prediction},
+  author    = {Tang, Zhengxu and Cui, Guofeng and Gong, Ziyu and Zhang, Xiaozhou and Deng, Ruifeng and Qi, Chengzhi and Chen, Ke and Patil, Sachin and Xiao, Tianjun and Liu, Langechuan and Wang, Pichao},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2609.00242}
+}
+```
